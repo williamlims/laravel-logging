@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SubController;
 use App\Http\Controllers\SomaController;
+use App\Http\Controllers\DivController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,5 @@ Route::get('/', function () {
 Route::get('/soma/{num1}/{num2}', [SomaController::class, 'soma']);
 
 Route::get('/sub/{num1}/{num2}', [SubController::class, 'sub']);
+
+Route::get('/div/{num1}/{num2}', [DivController::class, 'div']);
