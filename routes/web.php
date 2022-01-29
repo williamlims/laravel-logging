@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SubController;
 use App\Http\Controllers\SomaController;
 
 /*
@@ -23,3 +24,4 @@ Route::get('/', function () {
 
 Route::get('/soma/{num1}/{num2}', [SomaController::class, 'soma']);
 
+Route::get('/sub/{num1}/{num2}', [SubController::class, 'sub']);
